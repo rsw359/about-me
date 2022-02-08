@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Harlow-Italic';
+  src: url('fonts/harlow.ttf') format('truetype');
+}
+
+body {
+  background-image: url('../img/grid2.jpg') 
+  
+ 
+}
+
+hr.solid {
+  color: brown solid brown;
+}
+
+#nametite {
+  font-family: 'Harlow-Italic';
+  font-size: 100px;
+  color: brown;
+  
+}
+.bio-container {
+  display:flex
+  border-width: 2px;
+  align-items: center;
+}
+
+.image {
+  
+  width: 200px;
+}
+

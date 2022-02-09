@@ -17,24 +17,52 @@ hr.solid {
   font-family: 'Harlow-Italic';
   font-size: 100px;
   color: brown;
+  text-decoration: underline;
+  padding-top: 3px;
   
 }
 .bio-container {
-  display:flex
   
+  font-family: 'Harlow-Italic';
+  font-size: 25px;
+  
+  padding-top: 40px;
+  padding-left: 200px;
+  padding-right: 200px;
+  margin: 100px;
+  justify-content: center;
+  flex-direction: column;
+  display:flex
     
+}
+
+#addict {
+  color: rgba(232, 20, 20, 0.166);
+}
+
+#bio {
+  padding-bottom: 20px;
+}
+
+#edu {
+  padding-bottom: 20px;
+  
+}
+
+#goals{
+  color: brown;
+ padding-left: 50px;
+ padding-right: 70px;
 }
 
 .image {
   margin: 10px;
-  width: 200px;
-  align-items: center;
+  width: 300px;
 } 
 
 .image-container {
+  justify-content: center;
   display: flex
-  
-  
   
 }
 

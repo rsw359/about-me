@@ -21,12 +21,20 @@ hr.solid {
 }
 .bio-container {
   display:flex
-  border-width: 2px;
-  align-items: center;
+  
+    
 }
 
 .image {
-  
+  margin: 10px;
   width: 200px;
+  align-items: center;
+} 
+
+.image-container {
+  display: flex
+  
+  
+  
 }
 

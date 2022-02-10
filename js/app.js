@@ -47,18 +47,20 @@ function questThree();{
   }
 }
 questThree();
-  
+
 //Quest. 4//
-let answerFour = prompt('Was I born in 1982?').toLowerCase();
-
-if (answerFour === 'yes' || answerFour === 'y') {
-  alert(`That\'s correct, ${userName}. I was.`);
-  totalAnswers++;
-
-} else if (answerFour === 'no' || answerFour === 'n') {
-  alert(`No, ${userName}. I actually was born in '82.`);
+function questFour();{
+  let answerFour = prompt('Was I born in 1982?').toLowerCase();
+  
+  if (answerFour === 'yes' || answerFour === 'y') {
+    alert(`That\'s correct, ${userName}. I was.`);
+    totalAnswers++;
+    
+  } else if (answerFour === 'no' || answerFour === 'n') {
+    alert(`No, ${userName}. I actually was born in '82.`);
+  }
 }
-
+questFour();
 
 //Quest 5.//
 let answerFive = prompt('Do I enjoy photography?').toLowerCase();

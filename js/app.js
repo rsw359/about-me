@@ -6,15 +6,18 @@ let userName = prompt('What is your name?')
 alert(`Welcome, ${userName}. Let me tell you about myself`)
 
 // //Quest. 1//
+function questOne(){
   let answerOne = prompt('Do I have a BMC road bike?').toLowerCase();
-
+  
   if (answerOne === 'yes' || answerOne === 'y') {
     alert(`That\'s correct, ${userName}. I do.`);
     totalAnswers++;   
-
+    
   } else if (answerOne === 'no' || answerOne === 'n') {
     alert(`No, that\'s not correct, ${userName}. I do have a BMC.`);
   }
+}
+questOne();
 
 
 //Quest. 2//

@@ -66,3 +66,36 @@ hr.solid {
   
 }
 
+#vinyl-dec {
+  /* text-align: center; */
+  color: black;
+}
+
+.b-list-cont{
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Harlow-Italic';
+  font-size: 25px;
+  color: brown;
+  padding-bottom: 10px;
+  
+
+  }
+
+ #sub-item1{
+   /* text-align: center; */
+   color: brown
+  }
+
+  #list-1 {
+    color: black
+  }
+  
+  #worklist {
+    color: black;
+  }
+
+  
+  #hoblist{
+    color: black;
+  }

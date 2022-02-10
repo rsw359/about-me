@@ -21,16 +21,19 @@ questOne();
 
 
 //Quest. 2//
+function questTwo();{
   let answerTwo = prompt('Do I live in Japan or China').toLowerCase();
+  
+    if (answerTwo === 'japan') {
+      alert(`That\'s correct, ${userName}. I do.`);
+      totalAnswers++;
+  
+    } else {
+      alert(`No, I got you on that one, ${userName}. I live in Japan.`);
+    }
 
-  if (answerTwo === 'japan') {
-    alert(`That\'s correct, ${userName}. I do.`);
-    totalAnswers++;
-
-  } else {
-    alert(`No, I got you on that one, ${userName}. I live in Japan.`);
-  }
-
+}
+questTwo();
 
 //Quest. 3//
   let answerThree = prompt('Was I born in Seattle?').toLowerCase();

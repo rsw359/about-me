@@ -100,10 +100,11 @@ function questSix(){
 questSix();
 
 // Quest 7.//
-let cofMeth = ['V60','Clever','Aeropress'];//coffee methods
-let tries = 6
-let coffeeGuess = false
-
+function questSeven(){
+  let cofMeth = ['V60','Clever','Aeropress'];//coffee methods
+  let tries = 6
+  let coffeeGuess = false
+  
 while(tries-- && !coffeeGuess) {
   let answerSeven = prompt('I own a V60, Kalita Wave, Clever, Chemex, Aeropress, Moka Pot, French Press. Which do you think is my favorite?').toLowerCase();
   
@@ -113,18 +114,20 @@ while(tries-- && !coffeeGuess) {
       coffeeGuess = true;
       totalAnswers++;
     }
- }
- 
+  }
+  
   if(tries && !coffeeGuess){
     alert(`All your base are belong to us, ${userName}! Try again! You have ${tries} tries left!`)
-
-  } else if(!tries && !coffeeGuess) alert(`Anata ha mou, shindeiru! The correct answers were V60, Clever, or Aeropress.`); 
-         
+    
+    } else if(!tries && !coffeeGuess) alert(`Anata ha mou, shindeiru! The correct answers were V60, Clever, or Aeropress.`); 
+  }
 }
+questSeven();
+
 alert(`Thanks for the answers, ${userName}. You got ${totalAnswers} correct.`);
 // if (answerOne === 'yes' || answerOne === 'y') {
-//   console.log(`You got \#1 ${userName}`)
-// }
+  //   console.log(`You got \#1 ${userName}`)
+  // }
 
 // if (answerTwo === 'japan'){
 //   console.log(`Keep it up\, ${userName}! \#2 was right`)

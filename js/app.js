@@ -36,14 +36,17 @@ function questTwo();{
 questTwo();
 
 //Quest. 3//
+function questThree();{
   let answerThree = prompt('Was I born in Seattle?').toLowerCase();
   if (answerThree === 'no' || answerThree === 'n') {
     alert(`That\'s right, ${userName}. I was born in San Diego.`);
     totalAnswers++;
-
+    
   } else if (answerThree === 'yes' || answerThree=== 'y') {
     alert(`No, that\'s not quite right, ${userName}. I was born in San Diego.`);
   }
+}
+questThree();
   
 //Quest. 4//
 let answerFour = prompt('Was I born in 1982?').toLowerCase();

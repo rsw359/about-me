@@ -75,26 +75,29 @@ function questFive(){
   }
 }
  questFive();
-  
+
 //Quest 6.//
-let vinylGuess = 4
-let myVinyl = 100
-
-for(let i = 0; i <= 3; i++){
+function questSix(){
+  let vinylGuess = 4
+  let myVinyl = 100
   
-  let answerSix = prompt('How many Lp records do you think I own?').toLowerCase();
-  if (answerSix == myVinyl) {
-    alert(`You got it ${userName}. That\'s exactly right!`);
-    totalAnswers++;
-  break;  
-
-  } else if (answerSix > myVinyl) {
-  alert(`No, that\'s too many, ${userName}. Lower.`);
+  for(let i = 0; i <= 3; i++){
     
-  } else if(answerSix < myVinyl) {
-  alert(`Higher, ${userName}. Higher!`);
+    let answerSix = prompt('How many Lp records do you think I own?').toLowerCase();
+    if (answerSix == myVinyl) {
+      alert(`You got it ${userName}. That\'s exactly right!`);
+      totalAnswers++;
+      break;  
+      
+    } else if (answerSix > myVinyl) {
+      alert(`No, that\'s too many, ${userName}. Lower.`);
+      
+    } else if(answerSix < myVinyl) {
+      alert(`Higher, ${userName}. Higher!`);
+    }
+  }
 }
-}
+questSix();
 
 // Quest 7.//
 let cofMeth = ['V60','Clever','Aeropress'];//coffee methods

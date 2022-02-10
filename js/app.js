@@ -21,7 +21,7 @@ questOne();
 
 
 //Quest. 2//
-function questTwo();{
+function questTwo(){
   let answerTwo = prompt('Do I live in Japan or China').toLowerCase();
   
     if (answerTwo === 'japan') {
@@ -36,7 +36,7 @@ function questTwo();{
 questTwo();
 
 //Quest. 3//
-function questThree();{
+function questThree(){
   let answerThree = prompt('Was I born in Seattle?').toLowerCase();
   if (answerThree === 'no' || answerThree === 'n') {
     alert(`That\'s right, ${userName}. I was born in San Diego.`);
@@ -49,7 +49,7 @@ function questThree();{
 questThree();
 
 //Quest. 4//
-function questFour();{
+function questFour(){
   let answerFour = prompt('Was I born in 1982?').toLowerCase();
   
   if (answerFour === 'yes' || answerFour === 'y') {
@@ -63,16 +63,19 @@ function questFour();{
 questFour();
 
 //Quest 5.//
-let answerFive = prompt('Do I enjoy photography?').toLowerCase();
-
-if (answerFive === 'yes' || answerFive === 'y') {
-  alert(`That\'s correct, ${userName}. I do!`);
-  totalAnswers++;
-
-} else if (answerFive === 'no' || answerFive === 'n') {
-  alert(`No, that\'s not correct, ${userName}. I do enjoy photography.`);
+function questFive(){
+  let answerFive = prompt('Do I enjoy photography?').toLowerCase();
+  
+  if (answerFive === 'yes' || answerFive === 'y') {
+    alert(`That\'s correct, ${userName}. I do!`);
+    totalAnswers++;
+    
+  } else if (answerFive === 'no' || answerFive === 'n') {
+    alert(`No, that\'s not correct, ${userName}. I do enjoy photography.`);
+  }
 }
-
+ questFive();
+  
 //Quest 6.//
 let vinylGuess = 4
 let myVinyl = 100

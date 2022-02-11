@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Harlow-Italic';
-  src: url('fonts/Harlow-italic.ttf') format('truetype');
+  font-family: 'Harlow-italic';
+  src: url(fonts/Harlow-italic.ttf) format('truetype');
 }
 
 body {
@@ -14,7 +14,7 @@ hr.solid {
 }
 
 #nametite {
-  font-family: 'Harlow-Italic';
+  font-family: 'Harlow-italic';
   font-size: 100px;
   color: brown;
   text-decoration: underline;
@@ -23,7 +23,7 @@ hr.solid {
 }
 .bio-container {
   
-  font-family: 'Harlow-Italic';
+  font-family: 'Harlow-italic';
   font-size: 25px;
   
   padding-top: 15px;

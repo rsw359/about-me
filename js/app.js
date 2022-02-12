@@ -96,11 +96,12 @@ function questSix(){
     } else if(answerSix < myVinyl) {
       alert(`Higher, ${userName}. Higher!`);
       
-    } 
-
+    
+    
   }
-  
-}
+  }
+  }
+
 questSix();
 
 // Quest 7.//
@@ -109,7 +110,7 @@ function questSeven(){
   let tries = 6
   let coffeeGuess = false
   
-while(tries-- && !coffeeGuess) {
+while(tries && !coffeeGuess) {
   let answerSeven = prompt('I own a V60, Kalita Wave, Clever, Chemex, Aeropress, Moka Pot, French Press. Which do you think is my favorite?').toLowerCase();
   
   for(let i = 0; i < cofMeth.length; i++){
@@ -121,7 +122,8 @@ while(tries-- && !coffeeGuess) {
   }
   
   if(tries && !coffeeGuess){
-    alert(`All your base are belong to us, ${userName}! Try again! You have ${tries} tries left!`)
+    alert(`All your base are belong to us, ${userName}! Try again! You have ${tries} tries left!`);
+    tries--
     
     } else if(!tries && !coffeeGuess) alert(`Anata ha mou, shindeiru! The correct answers were V60, Clever, or Aeropress.`); 
   }

@@ -80,27 +80,31 @@ function questFive(){
 function questSix(){
   let vinylGuess = 4
   let myVinyl = 100
-  
+  let ansCor = false
+
   for(let i = 0; i <= 3; i++){
     
     let answerSix = prompt('How many Lp records do you think I own?').toLowerCase();
     if (answerSix == myVinyl) {
       alert(`You got it ${userName}. That\'s exactly right!`);
       totalAnswers++;
+      ansCor = true
       break;  
       
     } else if(answerSix > myVinyl) {
       alert(`No, that\'s too many, ${userName}. Lower.`);
-      
+      vinylGuess--
 
     } else if(answerSix < myVinyl) {
       alert(`Higher, ${userName}. Higher!`);
-      
+      vinylGuess--
     
-    
+    }
   }
+  if(!vinylGuess && !ansCor){
+    alert(`Too bad, ${userName}. Let's move on.`)
   }
-  }
+}
 
 questSix();
 

@@ -89,12 +89,15 @@ function questSix(){
       totalAnswers++;
       break;  
       
-    } else if (answerSix > myVinyl) {
+    } else if(answerSix > myVinyl) {
       alert(`No, that\'s too many, ${userName}. Lower.`);
       
     } else if(answerSix < myVinyl) {
       alert(`Higher, ${userName}. Higher!`);
     }
+  }if(!vinylGuess){
+    alert(`Let's skip this one, ${userName}`);
+    break;
   }
 }
 questSix();
@@ -125,38 +128,4 @@ while(tries-- && !coffeeGuess) {
 questSeven();
 
 alert(`Thanks for the answers, ${userName}. You got ${totalAnswers} correct.`);
-// if (answerOne === 'yes' || answerOne === 'y') {
-  //   console.log(`You got \#1 ${userName}`)
-  // }
-
-// if (answerTwo === 'japan'){
-//   console.log(`Keep it up\, ${userName}! \#2 was right`)
-// }
-
-// if (answerThree === 'no' || answerThree === 'n') {
-//  console.log(`\#3 was right \' too ${userName}`)
-// }
-
-// if (answerFour === 'yes' || answerFour === 'y') {
-//   console.log(`I bet you feel real smart\, ${userName}. Good, you are, #4 was right!`)
-// }
-
-// if (answerFive === 'yes' || answerFive === 'y') {
-//   console.log(`You got question 5 right\,too\, ${userName}`)
-
-// } else if (answerOne === 'yes' || answerOne === 'y' &&
-//     answerTwo === 'japan' && 
-//     answerThree === 'no' || answerThree === 'n' &&
-//     answerFour === 'yes' || answerFour === 'y' &&
-//     answerFive === 'yes' || answerFive === 'y'){
-
-//       console.log(`YOU GOT THEM ALL RIGHT\, ${userName}. 
-//       Maybe it was worth staying up all night to build this after all!`)
-//   } else {
-//       console.log('After you read my page\, you can try again')
-//   }
-
-
-
-
 

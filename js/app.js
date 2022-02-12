@@ -92,13 +92,14 @@ function questSix(){
     } else if(answerSix > myVinyl) {
       alert(`No, that\'s too many, ${userName}. Lower.`);
       
+
     } else if(answerSix < myVinyl) {
       alert(`Higher, ${userName}. Higher!`);
-    }
-  }if(!vinylGuess){
-    alert(`Let's skip this one, ${userName}`);
-    break;
+      
+    } 
+
   }
+  
 }
 questSix();
 
@@ -128,4 +129,9 @@ while(tries-- && !coffeeGuess) {
 questSeven();
 
 alert(`Thanks for the answers, ${userName}. You got ${totalAnswers} correct.`);
+
+
+
+
+
 
